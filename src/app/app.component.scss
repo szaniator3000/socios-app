@@ -1,0 +1,19 @@
+.grid-container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "header"
+    "router-outlet "
+    "footer";
+}
+.header {
+  grid-area: header;
+}
+.footer {
+  grid-area: footer;
+}
+.router-outlet {
+  grid-area: router-outlet;
+}
