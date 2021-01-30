@@ -12,6 +12,9 @@ export interface RouterModel {
   profile: {
     path: string;
   };
+  friends: {
+    path: string;
+  };
   register: {
     path: string;
   };
@@ -36,6 +39,9 @@ export const APP_ROUTES: RouterModel = {
   },
   profile: {
     path: 'profile',
+  },
+  friends: {
+    path: 'friends',
   },
   register: {
     path: 'register',

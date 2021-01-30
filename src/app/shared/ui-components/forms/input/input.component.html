@@ -1,0 +1,17 @@
+<label [attr.for]="inputId">
+  <span>
+    <ng-content></ng-content>
+  </span>
+</label>
+<input
+  #input
+  [attr.test-id]="testId"
+  [type]="type"
+  [id]="inputId"
+  [ngStyle]="style"
+  [autocomplete]="disableAutocomplete ? 'off' : 'on'"
+  [value]="_value"
+  (change)="handleValueChange($event.target.value)"
+  [placeholder]="showPlaceholder() ? placeholder : ''"
+  (blur)="onTouched()"
+/>

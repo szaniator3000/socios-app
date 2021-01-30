@@ -5,7 +5,7 @@
   grid-template-columns: 100%;
   grid-template-areas:
     "header"
-    "router-outlet "
+    "main"
     "footer";
 }
 .header {
@@ -15,5 +15,5 @@
   grid-area: footer;
 }
 .router-outlet {
-  grid-area: router-outlet;
+  grid-area: main;
 }
